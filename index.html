@@ -1,0 +1,419 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>The King Pizza</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript" />
+    <meta name="author" content="John Doe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      
+div#divBox{
+  display: none;
+  height:100%;
+  width:150px;
+  position: sticky;
+  top: 0;
+  
+}
+button
+{
+  border: none;
+}
+
+</style>
+  
+  </head>
+  <script>
+
+    function toggleDiv()
+    {
+      const divBox=document.getElementById("divBox");
+      divBox.style.display ="block";
+    }
+  </script>
+  <body>
+    
+    <div class="grid-container">
+      
+     
+      <div class="item1">
+        <div class="head">
+          <div class="menu">
+            <div class="mar">
+              <div class="dropdown">
+                <img src="menu.png" width="50" height="50" />
+
+                <div class="dropdown-content">
+                  <a href="#">Home</a>
+                  <a href="#">Order History</a>
+                  <a href="#">Deals & Offers</a>
+                  <a href="#">Menu</a>
+                  <a href="#">Terms & Conditions</a>
+                  <a href="#">Feedback</a>
+                  <a href="#">about & contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="namebox"><div class="name">The King Pizza</div></div>
+          <div class="accbox"></div>
+        </div>
+        <div class="subhead">
+          <div class="sub">
+            <a href="#">Bestsellers</a>
+          </div>
+          <div class="sub">
+            <a href="#newlaunches">New Launches</a>
+          </div>
+          <div class="sub">
+            <a href="#vegpizza">Veg Pizza</a>
+          </div>
+          <div class="sub">
+            <a href="#non-vegpizza">Non-Veg Pizza</a>
+          </div>
+          <div class="sub">
+            <a href="#beverages">Beverages</a>
+          </div>
+          <div class="sub">
+            <a href="#speciality">Speciality</a>
+          </div>
+        </div>
+      </div>
+
+
+<div class="item2">
+   <div id="divBox">
+    <div class="mainpaybox">
+      <div class="row-one">
+        <div class="imgp">
+          <img src="pi.png" width="520px" height="270px" />
+        </div>
+        <div class="hname">
+          <section id="Bestsellers"></section>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="row-two-p">
+        <div class="size">
+          <div class="sname">Select Size</div>
+          <select>
+            <option value="regular">Regular</option>
+            <option value="regular">Large + Rs:140</option>
+            <option value="regular">medium + Rs:80</option>
+          </select>
+        </div>
+        <div class="siz">
+          <div class="sname">Extra Cheese</div>
+          <input type="checkbox" />
+          <div class="logi">jest only Rs:50</div>
+        </div>
+        <div class="siz">
+          <div class="sname">Add Toppings</div>
+          <input type="text" />
+        </div>
+        <div class="payment">
+          <div class="sname">pay Rs:320</div>
+          <a href="pament.html"> <input type="submit" value="Pay" /></a>
+        </div>
+      </div>
+    </div>
+
+
+   </div>
+  </div>
+
+      
+      <div class="item3">
+
+        
+
+
+        <div class="mainbox">
+          <div class="row-one">
+            <div class="hname">
+              <section id="Bestsellers">BESTSELLERS</section>
+              <div class="line"></div>
+            </div>
+          </div>
+          
+          <div class="row-two">
+
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pi.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 320</div>
+                  <hr />
+                  <div class="pname">Blazing Onion & Paprika</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pi2.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 250</div>
+                  <hr />
+                  <div class="pname">Margherita</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pi3.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 310</div>
+                  <hr />
+                  <div class="pname">Peppy Paneer</div>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <div class="row-two">
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pi4.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 320</div>
+                  <hr />
+                  <div class="pname">Veg Extravaganza</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pi5.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 400</div>
+                  <hr />
+                  <div class="pname">Veggie Paradise</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pi6.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 380</div>
+                  <hr />
+                  <section id="newlaunches">
+                    <div class="pname">Cheese n Corn</div>
+                  </section>
+                </div>
+              </div>
+              </button>
+          </div>
+        </div>
+
+        <div class="mainbox">
+          <div class="row-one">
+            <div class="hname">
+              NEW LAUNCHES
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="row-two">
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pp1.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 360</div>
+                  <hr />
+                  <div class="pname">Fiery Jalapeno & Paprika</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pp2.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 380</div>
+                  <hr />
+                  <div class="pname">Paneer Paratha Pizza</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pp3.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 300</div>
+                  <hr />
+                  <div class="pname">Corn n Cheese Paratha Pizza</div>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <div class="row-two">
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pp4.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 400</div>
+                  <hr />
+                  <div class="pname">Spiced Double Chicken</div>
+                </div>
+              </div>
+              </button>
+
+              <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pp5.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 390</div>
+                  <hr />
+                  <div class="pname">Indo Fusion Chicken Pizza</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pp6.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 190</div>
+                  <hr />
+                  <section id="vegpizza">
+                    <div class="pname">Paneer Tikka Stuffed Garlic Bread</div>
+                  </section>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <div class="mainbox">
+          <div class="row-one">
+            <div class="hname">
+              VEG PIZZA
+              <div class="line"></div>
+            </div>
+          </div>
+          <div class="row-two">
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pv1.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 250</div>
+                  <hr />
+                  <div class="pname">Blazing Onion & Paprika</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pv2.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 320</div>
+                  <hr />
+                  <div class="pname">Blazing Onion & Paprika</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pv3.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 290</div>
+                  <hr />
+                  <div class="pname">Blazing Onion & Paprika</div>
+                </div>
+              </div>
+            </button>
+          </div>
+
+          <div class="row-two">
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pv4.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 300</div>
+                  <hr />
+                  <div class="pname">Blazing Onion & Paprika</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pv5.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 285</div>
+                  <hr />
+                  <div class="pname">Blazing Onion & Paprika</div>
+                </div>
+              </div>
+            </button>
+
+            <button id="boxx" onclick="toggleDiv()">
+              <div class="card">
+                <div class="card-tb">
+                  <img src="pv6.png" width="250px" height="130px" />
+                </div>
+                <div class="card-tb">
+                  <div class="rate">Rs 220</div>
+                  <hr />
+                  <div class="pname">Blazing Onion & Paprika</div>
+                </div>
+              </div>
+            </button>
+
+          </div>
+        </div>
+      </div>
+      <div class="item4">
+        <div class="addbox">
+          <img src="add2.png" width="300px" height="900px" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

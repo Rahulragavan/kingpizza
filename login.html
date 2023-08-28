@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+    <script>
+function newform()
+{
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+var email=document.myform.email.value;
+
+if(name==null||name=="")
+{
+document.getElementById("errora").innerHTML="enter the name";
+return false;
+}
+else if(password.length<10)
+{
+  document.getElementById("errorb").innerHTML="enter the mobile number";
+return false;
+}
+else if(email=="")
+{
+  document.getElementById("errorc").innerHTML="enter the email Id";
+  return false;
+}
+else
+{
+  return true;
+}
+}
+
+</script>
+
+  <body>
+    <div class="main">
+      <div class="left">
+        <img src="png.png" alt="pizza" width="420px" height="420" />
+      </div>
+      <div class="right">
+        <form name="myform" methord="post" action="index.html" onsubmit="return newform()">
+          <div class="name">The King Pizza</div>
+
+          <div class="input-group">
+            <div class="login">Name</div>
+            <div class="holder">
+              <input
+                type="text"
+                placeholder="Name"
+                id="name"
+                name="name"
+              />
+              <div id="errora"></div>
+            </div>
+            <br />
+            <div class="line"></div>
+          </div>
+
+          <div class="input-group">
+            <div class="login">Phone Number</div>
+            <div class="holder">
+              <input
+                type="text"
+                placeholder="Phone Number"
+                id="phonenumber"
+                name="password"
+              />
+              <div id="errorb"></div>
+            </div>
+            <br />
+            <div class="line"></div>
+          </div>
+
+          <div class="input-group">
+            <div class="login">E Mail</div>
+            <div class="holder">
+              <input type="text" placeholder="email" id="email" name="email" />
+              <div id="errorc"></div>
+            </div>
+            <br />
+            <div class="line"></div>
+          </div>
+
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>
